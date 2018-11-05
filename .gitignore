@@ -6,6 +6,8 @@
 /dist/*
 /venv
 /venv/*
+/_backup
+/_backup/*
 aws-rds-mssql.spec
 build.bat
 config.yml
