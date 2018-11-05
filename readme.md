@@ -55,3 +55,6 @@ MSSQL:
  - support some scenario with cache in the intermediate S3 storage
  - extra security with PROD tiers
  - and so on :)
+
+##### Contact with me on Linkedin
+[Istvan Darvas](https://www.linkedin.com/in/istvandarvas/)
