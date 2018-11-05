@@ -1,2 +1,14 @@
 .idea
 .idea/*
+/build
+/build/*
+/dist
+/dist/*
+/venv
+/venv/*
+aws-rds-mssql.spec
+build.bat
+config.yml
+docker-compose.yml
+Dockerfile
+requirements.bat
