@@ -20,7 +20,7 @@ Tested platforms:
 
 #### AWS Magic is used by me
 
-We use the AWS stored procedure to make and restore backup
+We use an AWS stored procedure to create and restore backups
 - [msdb.dbo.rds_backup_database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Procedural.Importing.html#SQLServer.Procedural.Importing.Native.Using.Backup)
 - [msdb.dbo.rds_restore_database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Procedural.Importing.html#SQLServer.Procedural.Importing.Native.Using.Restore)
 
