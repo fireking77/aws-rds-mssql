@@ -71,5 +71,5 @@ MSSQL:
  - extra security with PROD tiers
  - and so on :)
 
-##### Contact with me on Linkedin
-[Istvan Darvas](https://www.linkedin.com/in/istvandarvas/)
+##### Feel free to contact with me on LinkedIn
+[Istvan Darvas - System Architect - SRE / DevOps ](https://www.linkedin.com/in/istvandarvas/)
