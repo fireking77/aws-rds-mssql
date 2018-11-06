@@ -10,8 +10,8 @@ In one of my automatisation project We have to use AWS RDS MSSQL, not just in pr
 So it is hard to use it and script it with aws.cli.
 
 This script has only 2 purpose:
-- Backup and download from an RDS deployment.
-- Upload and restore into an RDS deployment.
+- Backup and download from an RDS deployment (On-Demand)
+- Upload and restore into an RDS deployment (On-Demand)
 
 Tested platforms:
 - Linux
