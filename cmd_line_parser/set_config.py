@@ -17,7 +17,7 @@ def set_config():
         prog='aws-rds-mssql',
         description='''AWS RDS/MSSQL backup and restore utility''',
         epilog='''
-            Made by Darvi - SRE / DevOps
+            Made by Darvi | System Architect - SRE / DevOps
             https://www.linkedin.com/in/istvandarvas/
              ''')
     parser.add_argument('rds_action',
