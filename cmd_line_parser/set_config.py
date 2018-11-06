@@ -15,7 +15,7 @@ def set_config():
 
     parser = argparse.ArgumentParser(
         prog='aws-rds-mssql',
-        description='''AWS RDS/MSSQL backup and restore utility''',
+        description='''AWS RDS / MSSQL backup and restore utility''',
         epilog='''
             Made by Darvi | System Architect - SRE / DevOps
             https://www.linkedin.com/in/istvandarvas/
