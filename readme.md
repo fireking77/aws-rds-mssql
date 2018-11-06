@@ -11,7 +11,7 @@ So it is hard to use it and script it with aws.cli.
 
 This script has only 2 purpose:
 - Backup and download from an RDS deployment.
-- Upload and restore into a RDS deployment.
+- Upload and restore into an RDS deployment.
 
 Tested platforms:
 - Linux
