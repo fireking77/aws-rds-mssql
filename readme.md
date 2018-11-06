@@ -64,11 +64,11 @@ MSSQL:
 
 # Happy backuping :)
 
-## TODO
+##### TODO
  - There is no error handling
- - Compressed backup
- - support some scenario with cache in the intermediate S3 storage
- - extra security with PROD tiers
+ - Compressed backups
+ - There is no support for some scenario, where we could use cache in the intermediate S3 storage
+ - extra caution with PRODUCTION tiers
  - and so on :)
 
 ##### Feel free to contact with me on LinkedIn
