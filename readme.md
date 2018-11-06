@@ -24,12 +24,24 @@ We use the AWS stored procedure to make and restore backup
 - [msdb.dbo.rds_backup_database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Procedural.Importing.html#SQLServer.Procedural.Importing.Native.Using.Backup)
 - [msdb.dbo.rds_restore_database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Procedural.Importing.html#SQLServer.Procedural.Importing.Native.Using.Restore)
 
-## Build
+# Build
 
 ```bash
 git clone <this poject>
 pip install -r requirements.txt
 pyinstaller --onefile aws-rds-mssql.py
+```
+
+# Howto use?
+```bash
+ help:
+    aws-rds-mssql --help
+
+ backup:
+    aws-rds-mssql --config-file config.yml --sql-bak-file mssql.bak backup
+
+ restore:
+    aws-rds-mssql --config-file config.yml --sql-bak-file mssql.bak restore   
 ```
 
 ## Config file (Yaml style)
@@ -50,19 +62,7 @@ MSSQL:
   name: "db-name"
 ```
 
-## Howto use?
-```bash
- help:
-    aws-rds-mssql --help
-
- backup:
-    aws-rds-mssql --config-file config.yml --sql-bak-file mssql.bak backup
-
- restore:
-    aws-rds-mssql --config-file config.yml --sql-bak-file mssql.bak restore   
-```
-
-## Happy backuping :)
+# Happy backuping :)
 
 ## TODO
  - There is no error handling
