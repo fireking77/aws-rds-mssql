@@ -26,7 +26,7 @@ We use the AWS stored procedure to make and restore backup
 
 ## Build
 
-```python
+```bash
 git clone <this poject>
 pip install -r requirements.txt
 pyinstaller --onefile aws-rds-mssql.py
