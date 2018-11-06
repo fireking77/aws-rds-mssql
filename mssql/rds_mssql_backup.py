@@ -23,8 +23,7 @@ def rds_mssql_backup():
     """.format(
         s3_bucket=global_config.config_file_parameters['AWS']['s3_bucket'],
         s3_object_key_name=global_config.config_file_parameters['AWS']['s3_object_key_name'],
-        db_name=global_config.config_file_parameters['MSSQL']['name'])
-    )
+        db_name=global_config.config_file_parameters['MSSQL']['name']))
 
     row = cursor.fetchone()
     task_id = row[0]
