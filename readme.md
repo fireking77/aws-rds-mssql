@@ -7,15 +7,30 @@ First of all, this is my first Python project. So feel free to make a codereview
 ## What is this?
 
 In one of my automatisation project We have to use AWS RDS MSSQL, not just in production in the development pipeline also.
-So it is hard to use it and script it with aws.cli. This script has only 2 purpose.
+So it is hard to use it and script it with aws.cli.
+
+This script has only 2 purpose:
 - Backup and download from an RDS deployment.
 - Upload and restore into a RDS deployment.
+
+Tested platforms:
+- Linux
+- Windows 10
+
 
 #### AWS Magic is used by me
 
 We use the AWS stored procedure to make and restore backup
 - [msdb.dbo.rds_backup_database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Procedural.Importing.html#SQLServer.Procedural.Importing.Native.Using.Backup)
 - [msdb.dbo.rds_restore_database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Procedural.Importing.html#SQLServer.Procedural.Importing.Native.Using.Restore)
+
+## Build
+
+```python
+git clone <this poject>
+pip install -r requirements.txt
+pyinstaller --onefile aws-rds-mssql.py
+```
 
 ## Config file (Yaml style)
 ```
