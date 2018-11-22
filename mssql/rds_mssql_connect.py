@@ -9,6 +9,6 @@ def rds_mssql_connect():
         server=global_config.config_file_parameters['MSSQL']['host'],
         user=global_config.config_file_parameters['MSSQL']['user'],
         password=global_config.config_file_parameters['MSSQL']['pass'],
-        database="tempdb",
+        database="master",
         autocommit=True
     )

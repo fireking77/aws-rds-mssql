@@ -14,8 +14,11 @@ def rds_mssql_restore():
         raise Exception("Thre is a running task...")
 
     # Drop database if exists
-    cursor.execute("DROP DATABASE IF EXISTS [{db_name}];".format(
-        db_name=global_config.config_file_parameters['MSSQL']['name']
+    cursor.execute("""
+        ALTER DATABASE [{db_name}] SET single_user with rollback IMMEDIATE;
+        DROP DATABASE IF EXISTS [{db_name}];
+        """.format(
+            db_name=global_config.config_file_parameters['MSSQL']['name']
     ))
 
     # MSSQL Restore procedure
