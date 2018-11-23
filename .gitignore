@@ -10,7 +10,7 @@
 /_backup/*
 aws-rds-mssql.spec
 build.bat
-config.yml
+weboffice-*
 docker-compose.yml
 Dockerfile
 requirements.bat
