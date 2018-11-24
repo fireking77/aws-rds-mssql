@@ -16,7 +16,7 @@ def rds_mssql_restore():
         if row[5] != "SUCCESS" and row[5] != "ERROR":
             raise Exception("There is a running task...")
     except TypeError:
-        # if row is empty, there is no database or any task
+        # if row is empty or there is no database or any task in the rds log
         pass
 
     # ALTER DB
