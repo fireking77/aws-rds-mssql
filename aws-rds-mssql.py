@@ -19,10 +19,10 @@ Remote Database Server: {db_host}
 Remote Database Name:   {db_name}
 Local MSSQL BAK File:   {sql_bak}
         '''.format(
-            db_host=global_config.config_file_parameters['MSSQL']['host'],
-            db_name=global_config.config_file_parameters['MSSQL']['name'],
-            db_tier=global_config.config_file_parameters['MSSQL']['tier'],
-            sql_bak=global_config.sql_bak_file_path))
+        db_host=global_config.config_file_parameters['MSSQL']['host'],
+        db_name=global_config.config_file_parameters['MSSQL']['name'],
+        db_tier=global_config.config_file_parameters['MSSQL']['tier'],
+        sql_bak=global_config.sql_bak_file_path))
 
     if global_config.rds_action == "restore":
         print("This is going to drop the remote database: {db_name}. CTRL+C to break...".format(
